@@ -601,7 +601,8 @@ open class LineChartRenderer: LineRadarRenderer
     
     open override func drawExtras(context: CGContext)
     {
-        drawCircles(context: context)
+        //CT: We do not want circles, uncomment next line to reenable
+        //drawCircles(context: context)
     }
     
     private func drawCircles(context: CGContext)
