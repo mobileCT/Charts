@@ -741,6 +741,8 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
         }
         else if recognizer.state == NSUIGestureRecognizerState.changed
         {
+            //CT: To have same behaviour as before or as Android change next line to
+            //if false
             if _isDragging
             {
                 let originalTranslation = recognizer.translation(in: self)
